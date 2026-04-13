@@ -1,0 +1,1 @@
+bucket_name = "ameer-s3-portfolio-2026-0412"
