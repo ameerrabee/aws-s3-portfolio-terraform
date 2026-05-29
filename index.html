@@ -1,44 +1,117 @@
 <!DOCTYPE html>
 <html lang="en">
 <head>
-  <meta charset="UTF-8">
-  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
   <title>Ameer Rabee | Cloud Portfolio</title>
-  <link rel="stylesheet" href="style.css">
+  <link rel="stylesheet" href="style.css" />
 </head>
 <body>
-  <header>
-    <h1>Ameer Rabee</h1>
-    <p>Aspiring Cloud Engineer | AWS Certified Cloud Practitioner</p>
+
+  <header class="hero">
+    <nav>
+      <h2>Ameer Rabee</h2>
+      <div>
+        <a href="#about">About</a>
+        <a href="#skills">Skills</a>
+        <a href="#projects">Projects</a>
+        <a href="#contact">Contact</a>
+      </div>
+    </nav>
+
+    <div class="hero-content">
+      <p class="badge">AWS Certified Cloud Practitioner • Azure Fundamentals</p>
+      <h1>Hi, I’m Ameer Rabee</h1>
+      <h3>Aspiring Cloud Support Specialist / Cloud Engineer</h3>
+      <p>
+        Computer Science student with hands-on IT support, networking, AWS, Azure,
+        and Terraform experience. I build real cloud projects to grow into cloud-focused roles.
+      </p>
+
+      <div class="buttons">
+        <a href="#projects" class="btn primary">View Projects</a>
+        <a href="https://github.com/ameerrabee" class="btn" target="_blank">GitHub</a>
+        <a href="https://www.linkedin.com/in/ameer-rabee-66bb18257" class="btn" target="_blank">LinkedIn</a>
+      </div>
+    </div>
   </header>
 
-  <section>
+  <section id="about" class="card">
     <h2>About Me</h2>
-    <p>I am an aspiring cloud professional with hands-on IT support experience and a growing background in AWS, cloud technologies, and technical problem-solving. I am currently building real cloud projects to strengthen my skills and transition into cloud-focused roles.</p>
+    <p>
+      I am an aspiring cloud professional with experience in IT support, Windows environments,
+      Microsoft 365, networking, and cloud technologies. I am currently focused on AWS, Azure,
+      Terraform, and building hands-on projects that show real technical ability.
+    </p>
   </section>
 
-  <section>
-    <h2>Skills</h2>
+  <section id="skills">
+    <h2>Technical Skills</h2>
+    <div class="grid">
+      <div class="skill-card">
+        <h3>AWS</h3>
+        <p>S3, IAM, EC2, VPC, CloudWatch, Shared Responsibility Model</p>
+      </div>
+
+      <div class="skill-card">
+        <h3>Azure</h3>
+        <p>Azure Fundamentals, Entra ID, RBAC, VNets, Storage, Cost Management</p>
+      </div>
+
+      <div class="skill-card">
+        <h3>Infrastructure</h3>
+        <p>Terraform, Git, GitHub, AWS CLI, Infrastructure as Code</p>
+      </div>
+
+      <div class="skill-card">
+        <h3>IT Support</h3>
+        <p>Windows, Microsoft 365, Active Directory, Troubleshooting, Networking</p>
+      </div>
+    </div>
+  </section>
+
+  <section id="projects">
+    <h2>Cloud Projects</h2>
+
+    <div class="project-card">
+      <h3>AWS Static Portfolio Website with Terraform</h3>
+      <p>
+        Built and deployed a personal static website on AWS using Amazon S3 and Terraform.
+        The project provisions cloud infrastructure as code, configures static website hosting,
+        applies public access policies, and uploads website files automatically.
+      </p>
+
+      <div class="tags">
+        <span>AWS S3</span>
+        <span>Terraform</span>
+        <span>GitHub</span>
+        <span>AWS CLI</span>
+      </div>
+
+      <a href="http://ameer-s3-portfolio-2026-0412.s3-website-us-east-1.amazonaws.com" target="_blank" class="btn primary">
+        Live Demo
+      </a>
+    </div>
+  </section>
+
+  <section class="card">
+    <h2>Certifications</h2>
     <ul>
-      <li>AWS Cloud Fundamentals</li>
-      <li>Amazon S3</li>
-      <li>Terraform</li>
-      <li>Git and GitHub</li>
-      <li>HTML and CSS</li>
-      <li>Technical Support</li>
+      <li>AWS Certified Cloud Practitioner</li>
+      <li>Microsoft Azure Fundamentals AZ-900</li>
     </ul>
   </section>
 
-  <section>
-    <h2>Projects</h2>
-    <p><strong>AWS Static Portfolio Website with Terraform</strong> – Built and deployed a personal static website on AWS using Amazon S3 and Infrastructure as Code with Terraform.</p>
+  <section id="contact" class="card">
+    <h2>Contact</h2>
+    <p>Email: <a href="mailto:ameerrabee333@gmail.com">ameerrabee333@gmail.com</a></p>
+    <p>LinkedIn: <a href="https://www.linkedin.com/in/ameer-rabee-66bb18257" target="_blank">linkedin.com/in/ameer-rabee-66bb18257</a></p>
+    <p>GitHub: <a href="https://github.com/ameerrabee" target="_blank">github.com/ameerrabee</a></p>
   </section>
 
-  <section>
-    <h2>Contact</h2>
-    <p>Email: ameerrabee333@gmail.com</p>
-    <p>LinkedIn: linkedin.com/in/ameer-rabee-66bb18257</p>
-    <p>GitHub: github.com/ameerrabee</p>
-  </section>
+  <footer>
+    <p>Built with HTML, CSS, AWS S3, and Terraform</p>
+  </footer>
+
 </body>
 </html>
